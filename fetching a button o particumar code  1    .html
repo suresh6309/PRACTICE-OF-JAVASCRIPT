@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Besant Technologies</title>
+        <h5>Login to Besant</h5>
+        <script type="text/javascript">
+            var msg = document.getElementById('lblMsg');
+            function Login(){
+                var n = document.getElementById('txtUserName').value;
+                if (n != 'Smith'){
+                    var msg = document.getElementById('lblMsg');
+                    msg.innerHTML='User name is invalid'
+                } else {
+                    var msg = document.getElementById('lblMsg');
+                    msg.innerHTML=''
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label id="lblMsg" style="color:red"></label>
+        <div>
+            <input id="txtUserName" class="txtbox" type="text" 
+                    placeholder="Username"
+                    minlength="7"
+                    maxlength="16"
+                    required="required"
+                    multiple="multiple">
+        </div>
+        <br />
+        <div>
+            <input id="txtPassword" class="txtbox" type="password" 
+                    placeholder="Password"
+                    minlength="7"
+                    maxlength="16"
+                    required="required">
+        </div>
+        <br />
+       <div>
+        <input id="btnLogIn" type="button" value="Log In" onclick="Login()">
+       </div>
+    </body>
+</html>
+
+https://collabedit.com/3343x
+
+<!--
+1. Variable decleration & assingment is hoisted. 
+a variable can be used before it has been declared.
+
+2. let declaration are not hoisted
+let initialization is not hoisted
+
+3. const declaration cannot be done without initializing value.
+4. const initialization are not hoisted.
+
+3. Function definition is hoisted
+4. function expression is not hoisted
+
+-->
