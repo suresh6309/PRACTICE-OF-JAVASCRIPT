@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Besant Technologies</title>
+        <h5>Login to Besant</h5>
+        <script type="text/javascript">
+            var msg = document.getElementById('1122');
+            function Login(){
+                var n = document.getElementById('txtUserName').value;
+                if (n != '-'){
+                    var msg = document.getElementById('1122');
+                    msg.innerHTML='User name is invalid'
+                } else {
+                    var msg = document.getElementById('1122');
+                    msg.innerHTML=''
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label id="1122" style="color:red"></label>
+
+            <input id="txtUserName"type="text" placeholder="name"required><br>
+            <input id="1122" type="button" value="Log In" onclick="Login()">
+       
+    </body>
+</html>
+
+
+<!--
+1. Variable decleration & assingment is hoisted. 
+a variable can be used before it has been declared.
+
+2. let declaration are not hoisted
+let initialization is not hoisted
+
+3. const declaration cannot be done without initializing value.
+4. const initialization are not hoisted.
+3. Function definition is hoisted
+4. function expression is not hoisted-->
